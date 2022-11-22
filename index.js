@@ -6,6 +6,10 @@ $('img.thumb').click(function () {
 })
 
 function show1() {
+	if ($('.tab-1').hasClass('inactive')) {
+		$('.tab-1').removeClass('inactive')
+		$('.tab-1').addClass('active')
+	}
 	if ($('.tablink-1').hasClass('inactive')) {
 		$('.tablink-1').removeClass('inactive')
 		$('.tablink-1').addClass('active')
@@ -19,6 +23,10 @@ function show1() {
 		$('.details-div').addClass('active')
 	}
 
+	if ($('.tab-2').hasClass('active')) {
+		$('.tab-2').removeClass('active')
+		$('.tab-2').addClass('inactive')
+	}
 	if ($('.tablink-2').hasClass('active')) {
 		$('.tablink-2').removeClass('active')
 		$('.tablink-2').addClass('inactive')
@@ -32,6 +40,10 @@ function show1() {
 		$('.ingredients-div').addClass('inactive')
 	}
 
+	if ($('.tab-3').hasClass('active')) {
+		$('.tab-3').removeClass('active')
+		$('.tab-3').addClass('inactive')
+	}
 	if ($('.tablink-3').hasClass('active')) {
 		$('.tablink-3').removeClass('active')
 		$('.tablink-3').addClass('inactive')
@@ -47,6 +59,10 @@ function show1() {
 }
 
 function show2() {
+	if ($('.tab-2').hasClass('inactive')) {
+		$('.tab-2').removeClass('inactive')
+		$('.tab-2').addClass('active')
+	}
 	if ($('.tablink-2').hasClass('inactive')) {
 		$('.tablink-2').removeClass('inactive')
 		$('.tablink-2').addClass('active')
@@ -60,6 +76,10 @@ function show2() {
 		$('.ingredients-div').addClass('active')
 	}
 
+	if ($('.tab-1').hasClass('active')) {
+		$('.tab-1').removeClass('active')
+		$('.tab-1').addClass('inactive')
+	}
 	if ($('.tablink-1').hasClass('active')) {
 		$('.tablink-1').removeClass('active')
 		$('.tablink-1').addClass('inactive')
@@ -73,6 +93,10 @@ function show2() {
 		$('.details-div').addClass('inactive')
 	}
 
+	if ($('.tab-3').hasClass('active')) {
+		$('.tab-3').removeClass('active')
+		$('.tab-3').addClass('inactive')
+	}
 	if ($('.tablink-3').hasClass('active')) {
 		$('.tablink-3').removeClass('active')
 		$('.tablink-3').addClass('inactive')
@@ -88,6 +112,10 @@ function show2() {
 }
 
 function show3() {
+	if ($('.tab-3').hasClass('inactive')) {
+		$('.tab-3').removeClass('inactive')
+		$('.tab-3').addClass('active')
+	}
 	if ($('.tablink-3').hasClass('inactive')) {
 		$('.tablink-3').removeClass('inactive')
 		$('.tablink-3').addClass('active')
@@ -101,6 +129,10 @@ function show3() {
 		$('.productInfo-div').addClass('active')
 	}
 
+	if ($('.tab-2').hasClass('active')) {
+		$('.tab-2').removeClass('active')
+		$('.tab-2').addClass('inactive')
+	}
 	if ($('.tablink-2').hasClass('active')) {
 		$('.tablink-2').removeClass('active')
 		$('.tablink-2').addClass('inactive')
@@ -114,6 +146,10 @@ function show3() {
 		$('.ingredients-div').addClass('inactive')
 	}
 
+	if ($('.tab-1').hasClass('active')) {
+		$('.tab-1').removeClass('active')
+		$('.tab-1').addClass('inactive')
+	}
 	if ($('.tablink-1').hasClass('active')) {
 		$('.tablink-1').removeClass('active')
 		$('.tablink-1').addClass('inactive')
