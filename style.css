@@ -143,7 +143,6 @@ body {
 	/* margin: 2rem; */
 }
 .ingLabel {
-	height: 600px;
 	max-height: 100%;
 	width: auto;
 	flex-basis: 50%;
@@ -293,15 +292,17 @@ img.ingredient {
 	}
 }
 
+@media screen and (max-width: 1080px) {
+	.ingredients-txt {
+		flex-basis: 80% !important;
+	}
+}
+
 @media screen and (max-width: 992px) {
 	.product-col {
 		flex-basis: 90%;
 		align-self: auto;
 	}
-
-	/* .pdp-name-div h3 {
-		margin-bottom: 0;
-	} */
 	.addtocart-col ul {
 		width: 50%;
 	}
