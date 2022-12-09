@@ -123,7 +123,6 @@ body {
 }
 .tab-div {
   display: flex;
-  /* flex-basis: 60%; */
   justify-content: center;
 }
 .tab-btn-div {
@@ -137,27 +136,22 @@ body {
   border: none;
   background-color: white !important;
 }
-.tablink-1.active,
-.tablink-2.active,
-.tablink-3.active {
-  color: rgba(0, 0, 0, 0.87);
-  /* background-color: gray; */
-}
 .tab-btn-div:hover {
   box-shadow: 2px 2px 4px rgb(96, 96, 96);
   color: rgba(255, 255, 255);
   font-weight: bold;
   background-color: #27ae5f55 !important;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 .ingredients-div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 2rem;
   /* margin: 2rem; */
 
-  background-image: url("assets/backgrounds/bkgd-1000x750_Evan-3.jpg");
+  background-image: url("assets/backgrounds/bkgd-1000x750_Evan-1.jpg");
 
   min-height: 500px;
 
@@ -188,6 +182,7 @@ body {
 .productInfo-div {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  padding: 2rem;
 
   background-image: url("assets/backgrounds/bkgd-1000x750_Evan-2.jpg");
 
