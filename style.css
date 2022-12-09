@@ -73,7 +73,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   /* The image used */
-  background-image: url("/assets/backgrounds/bkgd-1000x750_Evan-1.jpg");
+  background-image: url("assets/backgrounds/bkgd-1000x750_Evan-1.jpg");
 
   /* Set a specific height */
   min-height: 500px;
