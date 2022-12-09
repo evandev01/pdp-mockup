@@ -1,3 +1,8 @@
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   margin-top: 0px;
   margin-left: auto;
@@ -163,6 +168,8 @@ body {
 .ingLabel {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
   flex-basis: 50%;
 }
 .ingLabel img {
