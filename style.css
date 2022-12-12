@@ -29,6 +29,45 @@ body {
 	flex-wrap: wrap;
 }
 
+/* STICKY DIV */
+.sticky-div-relative {
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+.sticky-div-fixed {
+	display: none;
+}
+.sticky-div-fixed img {
+	display: none;
+}
+
+.sticky-div-fixed.active {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px !important;
+	background-color: white;
+	display: none;
+	z-index: 999;
+	display: block;
+}
+.sticky-div-fixed.active img {
+	position: fixed;
+	/* top: 0; */
+	left: 50%;
+	transform: translateX(-50%);
+	/* z-index: 999; */
+	height: 100px;
+	max-height: 100%;
+	width: auto;
+	display: block;
+}
+
 /* PDP TOP */
 .pdp-top-container {
 	display: flex;

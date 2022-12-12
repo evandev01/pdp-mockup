@@ -12,3 +12,20 @@ $('.tab-btn-div').hover(
 		$(this).find('#caret-down').css('color', '#27ae60')
 	}
 )
+
+window.addEventListener('scroll', function () {
+	checkY()
+})
+
+function checkY() {
+	if (
+		window.scrollY > document.getElementById('pdp-top-container').offsetHeight
+	) {
+		console.log('past container')
+		$('.sticky-div-fixed').addClass('active')
+		// $('.sticky-div-fixed > img').addClass('active')
+	} else {
+		$('.sticky-div-fixed').removeClass('active')
+		// $('.sticky-div-fixed > img').removeClass('active')
+	}
+}
