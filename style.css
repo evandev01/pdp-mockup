@@ -5,30 +5,19 @@ body {
 
 body {
   margin-top: 0px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* width: 80%; */
+  margin-left: auto;
+  margin-right: auto;
   font-family: "PT Sans", sans-serif;
   color: rgba(0, 0, 0, 0.87);
 }
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-}
-
 .main-content {
   display: flex;
+  justify-content: center;
+}
+.main {
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* flex-wrap: wrap; */
+  width: 80%;
 }
 
 /* STICKY DIV */
@@ -77,10 +66,8 @@ main {
 }
 .sticky-div-fixed.active img {
   position: fixed;
-  /* top: 0; */
   left: 50%;
   transform: translateX(-50%);
-  /* z-index: 999; */
   height: 100px;
   max-height: 100%;
   width: auto;
@@ -94,16 +81,20 @@ main {
   flex-wrap: wrap-reverse;
   justify-content: center;
 }
-.product-col {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 50%;
-}
+.product-col,
 .addtocart-col {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
 }
+/* .addtocart-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+} */
 .pdp-name-div h1 {
   margin-bottom: 0;
 }
@@ -112,11 +103,18 @@ main {
 }
 .product-col img {
   align-self: center;
+  /* width: 100%;
+  max-width: 100%;
+  height: auto; */
 }
 .list li {
   list-style: square;
 }
 
+.content-row {
+  display: flex;
+  justify-content: center;
+}
 /* DETAILS */
 .details-container {
   display: flex;
@@ -128,7 +126,6 @@ main {
   margin-left: 0;
   margin-right: 0;
   flex-basis: 100%;
-  width: 100%;
 }
 .details-div {
   display: flex;
@@ -172,6 +169,8 @@ main {
 }
 
 .border {
+  margin-left: auto;
+  margin-right: auto;
   border-top: 1px solid rgba(0, 0, 0, 0.277);
   width: 80%;
   margin-top: 2rem;
@@ -358,88 +357,3 @@ img.ingredient {
     flex-basis: 80%;
   }
 }
-
-/* @media screen and (max-width: 1200px) {
-  .ingredients-div {
-    flex-wrap: wrap;
-  }
-  .ingredients-txt h3 {
-    text-align: center;
-  }
-  .list-div {
-    align-items: center;
-  }
-  .addtocart-col {
-    align-items: center;
-    flex-basis: 50%;
-    align-self: auto;
-    margin-bottom: 2rem;
-  }
-  .pdp-list-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-  }
-  .pdp-name-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0;
-  }
-  .card {
-    display: flex;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .ingredients-txt {
-    flex-basis: 80% !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .product-col {
-    flex-basis: 90%;
-    align-self: auto;
-  }
-  .addtocart-col ul {
-    width: 50%;
-  }
-  .ratings-add-btn-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-  .addtocart-btn {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-  .details-container {
-    flex-wrap: wrap !important;
-    width: 100%;
-    padding: 2rem auto;
-    margin: 2rem;
-  }
-  .details-col {
-    flex-basis: 25% !important;
-  }
-  .results-container {
-    flex-basis: 90%;
-  }
-  .card-row {
-    flex-basis: 45%;
-  }
-  .card p {
-    flex-basis: 45%;
-  }
-  .results-h1 {
-    text-align: center;
-  }
-} */
