@@ -18,14 +18,23 @@ window.addEventListener("scroll", function () {
 })
 
 function checkY() {
-  if (
-    window.scrollY > document.getElementById("pdp-top-container").offsetHeight
-  ) {
-    console.log("past container")
-    $(".sticky-div-fixed").addClass("active")
-    // $('.sticky-div-fixed > img').addClass('active')
+  if (!$(".sticky-div-fixed").hasClass("removed")) {
+    if (
+      window.scrollY > document.getElementById("pdp-top-container").offsetHeight
+    ) {
+      console.log("past container")
+      $(".sticky-div-fixed").addClass("active")
+      // $('.sticky-div-fixed > img').addClass('active')
+    } else {
+      $(".sticky-div-fixed").removeClass("active")
+      // $('.sticky-div-fixed > img').removeClass('active')
+    }
   } else {
-    $(".sticky-div-fixed").removeClass("active")
-    // $('.sticky-div-fixed > img').removeClass('active')
+    window.removeEventListener("scroll")
   }
 }
+
+$(".close-button").click(function () {
+  $(".sticky-div-fixed").removeClass("active")
+  $(".sticky-div-fixed").addClass("removed")
+})

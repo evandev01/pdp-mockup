@@ -47,16 +47,33 @@ main {
 .sticky-div-fixed img {
   display: none;
 }
+.sticky-div-fixed.removed {
+  display: none;
+}
 
 .sticky-div-fixed.active {
   position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   height: 100px !important;
   background-color: white;
   display: none;
   z-index: 999;
   display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+}
+.close-button {
+  position: fixed;
+  top: 2%;
+  right: 0;
+  margin-right: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  right: 0;
+}
+.close-button:hover {
+  color: rgba(0, 0, 0, 0.9);
 }
 .sticky-div-fixed.active img {
   position: fixed;
@@ -155,7 +172,7 @@ main {
 }
 
 .border {
-  border-top: 1px solid rgba(0, 0, 0, 0.377);
+  border-top: 1px solid rgba(0, 0, 0, 0.277);
   width: 80%;
   margin-top: 2rem;
 }
