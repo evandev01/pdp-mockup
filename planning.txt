@@ -14,11 +14,15 @@ PDP Mock-Up Edits:
 - Switch to 2 column layout for cards on Desktop (single on mobile)
 - Use PNG's for card images
 
-// details div needs to span 100% width of screen
+// DETAILS IMAGES
 
-try
-// 100vw
+https://www.botanicchoice.com/images/FastActingJointComfort-PDP-1.png
 
-// making the main content 100% width and the content within a smaller width
+https://www.botanicchoice.com/images/FastActingJointComfort-PDP-2.png
+
+https://www.botanicchoice.com/images/FastActingJointComfort-PDP-3.png
+
+https://www.botanicchoice.com/images/FastActingJointComfort-PDP-4.png
 
 removed backgrounds in details container, replaced with grey background, styled details div to take up entire width of screen
+added hover effect on details tabs
