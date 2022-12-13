@@ -1,0 +1,22 @@
+// black bullets
+// orange buttons for all cta's
+// green arrow
+// image on one side - copy on other
+// Customer Highlights - testimonials
+
+PDP Mock-Up Edits:
+- Change bullet points to black
+- Add "Customer Highlights" Tab
+- Change the green headers to black (card titles can stay Green)
+- Use Tabs for Product Highlights, Ingredients, Product Info, Customer Highlights on Desktop with light gray background (Jim to provide supporting images, or use product images)
+- Use Drop Downs for Product Highlights, Ingredients, Product Info, Customer Highlights on Mobile with light gray backgrounds (Jim to provide supporting images, or use product images)
+- Add Product Name, Tagline "Feel the Difference... Right Away!", and Price to purchase product drop down
+- Switch to 2 column layout for cards on Desktop (single on mobile)
+- Use PNG's for card images
+
+// details div needs to span 100% width of screen
+
+try
+// 100vw
+
+// making the main content 100% width and the content within a smaller width
