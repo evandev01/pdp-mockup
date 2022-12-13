@@ -20,3 +20,5 @@ try
 // 100vw
 
 // making the main content 100% width and the content within a smaller width
+
+removed backgrounds in details container, replaced with grey background, styled details div to take up entire width of screen

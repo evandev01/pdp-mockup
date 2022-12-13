@@ -199,9 +199,18 @@ button.tablinks.active {
   background-color: white !important;
 }
 
+button.tablinks:hover {
+  cursor: pointer;
+  font-size: large;
+  color: rgba(0, 0, 0, 0.87) !important;
+  border: none;
+  background-color: white !important;
+}
+
 #caret-down.active {
   color: #27ae60;
   display: block;
+  text-align: center;
 }
 
 #caret-down.inactive {
