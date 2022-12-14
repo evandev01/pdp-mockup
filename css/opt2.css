@@ -14,7 +14,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
 /* STICKY DIV */
@@ -177,7 +177,7 @@ button.tablinks:hover {
 .details-container {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
   flex-basis: 100%;
   width: 100%;
 }
@@ -188,7 +188,8 @@ button.tablinks:hover {
 
 .details-div.highlights.active {
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
+  margin: 1rem;
   justify-content: center;
   flex-wrap: nowrap;
   background: rgba(0, 0, 0, 0.03);
@@ -197,22 +198,22 @@ button.tablinks:hover {
 .highlights-img-div {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 
 .highlights-img-div img {
   width: 600px;
   max-width: 100%;
   height: auto;
+  padding: 1rem;
 }
 
 .details-txt-div {
   display: flex;
   flex-direction: column;
-  /* flex-basis: 40%; */
   width: 600px;
   max-width: 100%;
   height: auto;
+  padding: 1rem;
 }
 
 .details-txt-div h3 {
@@ -226,6 +227,13 @@ button.tablinks:hover {
   line-height: 1.5em;
 }
 
+@media screen and (max-width: 768px) {
+  .details-div.highlights.active {
+    flex-wrap: wrap;
+  }
+}
+/* END PRODUCT HIGHLIGHTS */
+
 .legal-fda {
   border: 1px solid black;
 }
@@ -237,61 +245,97 @@ button.tablinks:hover {
 
 .details-div.ingredients.active {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  padding: 1rem;
+  margin: 1rem;
   justify-content: center;
-  padding: 2rem;
-  margin-top: 1.5rem;
+  flex-wrap: nowrap;
   background: rgba(0, 0, 0, 0.03);
+}
+
+.ingredients-img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ingredients-img-div img {
+  width: 450px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.ingredients-txt {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+}
+
+.ingredients-txt h3 {
+  color: #27ae60;
+  text-align: left;
 }
 
 .no-list ul,
 .no-list li {
   display: flex;
-  flex-basis: 25%;
   list-style: none;
   padding: 0.2rem;
 }
 
-.ingredients-txt {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 40%;
+@media screen and (max-width: 768px) {
+  .details-div.ingredients.active {
+    flex-wrap: wrap;
+    flex-direction: row-reverse !important;
+  }
 }
+/* END INGREDIENTS */
 
-.ingredients-txt h3 {
-  color: #27ae60;
-}
-
+/* PRODUCT INFO */
 .details-div.info.inactive {
   display: none;
 }
 
 .details-div.info.active {
   display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 2rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  margin: 1rem;
   background: rgba(0, 0, 0, 0.03);
-}
-
-.info.productInfo-txt h3 {
-  text-align: left;
-}
-
-.productInfo-txt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 40%;
-  width: 300px;
 }
 
 .info-img-div {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+}
+
+.info-img-div img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.productInfo-txt {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.info-img-div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .details-div.info.active {
+    flex-wrap: wrap;
+  }
 }
 /* END PRODUCT INFO */
 
@@ -303,6 +347,37 @@ button.tablinks:hover {
 .customer-highlights.active {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.customer-highlights-txt {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.customer-img-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-img-div img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .customer-highlights.active {
+    flex-wrap: wrap-reverse;
+  }
 }
 /* END CUSTOMER HIGHLIGHTS */
 
@@ -367,22 +442,13 @@ img.ingredient {
 
 @media screen and (max-width: 992px) {
   .main {
-    width: 90%;
-  }
-  .ingLabel {
-    flex-basis: 60%;
-  }
-  .ingredients-txt {
-    flex-basis: 60%;
-    align-items: center;
-  }
-  .list-div {
-    align-items: center;
+    width: 100%;
+    margin: 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .details-txt-div {
     flex-basis: 80%;
   }
-}
+} */
