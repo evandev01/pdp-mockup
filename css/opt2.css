@@ -121,11 +121,301 @@ body {
   margin-top: 2rem;
 }
 
+/* ACCORDION */
+.accordion-container {
+  margin-top: 2rem;
+}
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.accordion:hover,
+.accordion.active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+#caret-right {
+  display: flex;
+  color: #27ae60;
+  transition: 0.4s;
+}
+
+@media screen and (min-width: 992px) {
+  .accordion-container {
+    display: none;
+  }
+  .details-container-acc {
+    display: none;
+  }
+}
+/* END ACCORDION */
+
+/* TRANSITION ANIMATION */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+/* TRANSITION ANIMATION */
+
+/* DETAILS CONTAINER ACC */
+.details-container-acc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  flex-basis: 100%;
+  width: 100%;
+}
+/* END DETAILS CONTAINER ACC */
+
+/* HIGHLIGHTS ACC */
+.details-div-acc.highlights {
+  display: none;
+  animation: fade-out 300ms forwards;
+}
+
+.details-div-acc.highlights.active {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background: rgba(0, 0, 0, 0.03);
+  animation: fade-in 300ms forwards;
+}
+
+.highlights-img-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlights-img-div img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.details-txt-div {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.details-txt-div h3 {
+  color: #27ae60;
+  margin-bottom: 0;
+  line-height: 1.5em;
+}
+
+.details-txt-div p {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .details-div-acc.highlights.active {
+    flex-wrap: wrap;
+  }
+}
+/* END HIGHLIGHTS ACC */
+
+/* INGREDIENTS ACC */
+.details-div-acc.ingredients {
+  display: none;
+  animation: fade-out 300ms forwards;
+}
+
+.details-div-acc.ingredients.active {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background: rgba(0, 0, 0, 0.03);
+  animation: fade-in 300ms forwards;
+}
+
+.ingredients-img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ingredients-img-div img {
+  width: 450px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.ingredients-txt {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+}
+
+.ingredients-txt h3 {
+  color: #27ae60;
+  text-align: left;
+}
+
+.no-list ul,
+.no-list li {
+  display: flex;
+  list-style: none;
+  padding: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .details-div-acc.ingredients.active {
+    flex-wrap: wrap;
+    flex-direction: row-reverse !important;
+  }
+}
+/* END INGREDIENTS ACC */
+
+/* PRODUCT INFO ACC */
+.details-div-acc.info {
+  display: none;
+  animation: fade-out 300ms forwards;
+}
+
+.details-div-acc.info.active {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  margin: 1rem;
+  background: rgba(0, 0, 0, 0.03);
+  animation: fade-in 300ms forwards;
+}
+
+.info-img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.info-img-div img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.productInfo-txt {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.info-img-div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .details-div-acc.info.active {
+    flex-wrap: wrap;
+  }
+}
+/* END PRODUCT INFO ACC */
+
+/* CUSTOMER HIGHLIGHTS ACC */
+.details-div-acc.customer-highlights {
+  display: none;
+  animation: fade-out 300ms forwards !important;
+}
+
+.details-div-acc.customer-highlights.active {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.03);
+  animation: fade-in 300ms forwards !important;
+}
+
+.customer-highlights-txt {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.customer-img-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-img-div img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .details-div-acc.customer-highlights.active {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+/* END CUSTOMER HIGHLIGHTS ACC */
+
 /* TABS */
 .tab-container {
+  display: none;
+}
+
+.tab-container.active {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .tab-container.active {
+    display: none;
+  }
+  .details-container {
+    display: none;
+  }
+  .details-div.highlights.active {
+    display: none !important;
+  }
 }
 
 .tab-container a {
@@ -168,7 +458,7 @@ button.tablinks:hover {
   text-align: center;
 }
 
-#caret-down.inactive {
+#caret-down {
   display: none;
 }
 /* END TABS */
@@ -182,7 +472,7 @@ button.tablinks:hover {
   width: 100%;
 }
 
-.details-div.highlights.inactive {
+.details-div.highlights {
   display: none;
 }
 
@@ -239,7 +529,7 @@ button.tablinks:hover {
 }
 
 /* INGREDIENTS */
-.details-div.ingredients.inactive {
+.details-div.ingredients {
   display: none;
 }
 
@@ -292,7 +582,7 @@ button.tablinks:hover {
 /* END INGREDIENTS */
 
 /* PRODUCT INFO */
-.details-div.info.inactive {
+.details-div.info {
   display: none;
 }
 
@@ -340,7 +630,7 @@ button.tablinks:hover {
 /* END PRODUCT INFO */
 
 /* CUSTOMER HIGHLIGHTS */
-.customer-highlights.inactive {
+.customer-highlights {
   display: none;
 }
 
@@ -411,13 +701,14 @@ button.tablinks:hover {
 
 .card {
   display: flex;
-  flex-basis: 100%;
+  flex-basis: 40%;
   transition: 0.3s;
-  width: 800px;
+  width: 300px;
   max-width: 100%;
   height: auto;
   padding: 10px 10px;
   justify-content: flex-start;
+  border-radius: 6px;
 }
 
 .card:hover {
@@ -433,17 +724,17 @@ button.tablinks:hover {
   margin: 10px;
 }
 
-img.ingredient {
-  width: 150px;
+.ingredient {
+  width: 150px !important;
   max-width: 100%;
-  max-height: 150px;
+  /* max-height: 150px; */
   height: auto;
 }
 
-@media screen and (max-width: 992px) {
-  .main {
-    width: 100%;
-    margin: 0;
+@media screen and (max-width: 768px) {
+  .card {
+    flex-basis: 100%;
+    margin: 1rem;
   }
 }
 
