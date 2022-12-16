@@ -5,8 +5,9 @@ body {
 
 body {
   margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  /* margin-left: auto;
+  margin-right: auto; */
   font-family: "PT Sans", sans-serif;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -127,7 +128,7 @@ body {
 }
 .accordion {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.03);
   cursor: pointer;
