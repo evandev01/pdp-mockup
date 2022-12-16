@@ -393,7 +393,6 @@ body {
 .customer-highlights-txt {
   display: flex;
   flex-direction: column;
-  margin: auto;
   width: 600px;
   max-width: 100%;
   height: auto;
@@ -403,6 +402,7 @@ body {
 .customer-img-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .customer-img-div img {
