@@ -120,11 +120,6 @@ body {
   width: 100%;
 }
 
-.content-row {
-  display: flex;
-  justify-content: center;
-}
-
 @media screen and (max-width: 768px) {
   .addtocart-col,
   .product-col {
@@ -132,6 +127,28 @@ body {
   }
 }
 /* END PDP TOP */
+
+.content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-row img {
+  height: 300px;
+  max-height: 100%;
+  width: auto;
+  padding: 1rem;
+}
+.content-row h3 {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content-row {
+    flex-wrap: wrap-reverse;
+  }
+}
 
 .border {
   margin-left: auto;
